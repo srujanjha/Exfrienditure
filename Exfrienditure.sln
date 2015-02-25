@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30723.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Exfrienditure", "Exfrienditure", "{D68B096B-07A4-4F73-B012-398512EE797E}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Exfrienditure.Shared", "Exfrienditure\Exfrienditure.Shared\Exfrienditure.Shared.shproj", "{AD7528B2-42EA-4C19-9BDD-050433AE05C0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exfrienditure.WindowsPhone", "Exfrienditure\Exfrienditure.WindowsPhone\Exfrienditure.WindowsPhone.csproj", "{09C899C2-30BC-4311-A570-D98FF74939F5}"
+EndProject
+Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		Exfrienditure\Exfrienditure.Shared\Exfrienditure.Shared.projitems*{09c899c2-30bc-4311-a570-d98ff74939f5}*SharedItemsImports = 4
+		Exfrienditure\Exfrienditure.Shared\Exfrienditure.Shared.projitems*{ad7528b2-42ea-4c19-9bdd-050433ae05c0}*SharedItemsImports = 13
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|ARM = Debug|ARM
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|ARM = Release|ARM
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{09C899C2-30BC-4311-A570-D98FF74939F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09C899C2-30BC-4311-A570-D98FF74939F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09C899C2-30BC-4311-A570-D98FF74939F5}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{09C899C2-30BC-4311-A570-D98FF74939F5}.Debug|ARM.ActiveCfg = Debug|ARM
+		{09C899C2-30BC-4311-A570-D98FF74939F5}.Debug|ARM.Build.0 = Debug|ARM
+		{09C899C2-30BC-4311-A570-D98FF74939F5}.Debug|ARM.Deploy.0 = Debug|ARM
+		{09C899C2-30BC-4311-A570-D98FF74939F5}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{09C899C2-30BC-4311-A570-D98FF74939F5}.Debug|x86.ActiveCfg = Debug|x86
+		{09C899C2-30BC-4311-A570-D98FF74939F5}.Debug|x86.Build.0 = Debug|x86
+		{09C899C2-30BC-4311-A570-D98FF74939F5}.Debug|x86.Deploy.0 = Debug|x86
+		{09C899C2-30BC-4311-A570-D98FF74939F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09C899C2-30BC-4311-A570-D98FF74939F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{09C899C2-30BC-4311-A570-D98FF74939F5}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{09C899C2-30BC-4311-A570-D98FF74939F5}.Release|ARM.ActiveCfg = Release|ARM
+		{09C899C2-30BC-4311-A570-D98FF74939F5}.Release|ARM.Build.0 = Release|ARM
+		{09C899C2-30BC-4311-A570-D98FF74939F5}.Release|ARM.Deploy.0 = Release|ARM
+		{09C899C2-30BC-4311-A570-D98FF74939F5}.Release|x64.ActiveCfg = Release|Any CPU
+		{09C899C2-30BC-4311-A570-D98FF74939F5}.Release|x86.ActiveCfg = Release|x86
+		{09C899C2-30BC-4311-A570-D98FF74939F5}.Release|x86.Build.0 = Release|x86
+		{09C899C2-30BC-4311-A570-D98FF74939F5}.Release|x86.Deploy.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{AD7528B2-42EA-4C19-9BDD-050433AE05C0} = {D68B096B-07A4-4F73-B012-398512EE797E}
+		{09C899C2-30BC-4311-A570-D98FF74939F5} = {D68B096B-07A4-4F73-B012-398512EE797E}
+	EndGlobalSection
+EndGlobal

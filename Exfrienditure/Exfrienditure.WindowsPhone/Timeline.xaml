@@ -1,0 +1,54 @@
+﻿<Page
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Exfrienditure"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:Maps="using:Windows.UI.Xaml.Controls.Maps"
+    x:Class="Exfrienditure.Timeline"
+    mc:Ignorable="d">
+    <Page.Background>
+        <SolidColorBrush Color="#FF301F00"/>
+    </Page.Background>
+    <Grid x:Name="LayoutRoot">
+
+        <Grid.ChildrenTransitions>
+            <TransitionCollection>
+                <EntranceThemeTransition/>
+            </TransitionCollection>
+        </Grid.ChildrenTransitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!-- Title Panel -->
+        <StackPanel Grid.Row="0" Margin="19,0,0,0">
+            <TextBlock Text="EXFRIENDITURE" Style="{ThemeResource TitleTextBlockStyle}" Margin="0,12,0,0"/>
+            <TextBlock Text="timeline" Margin="0,-6.5,0,26.5" Style="{ThemeResource HeaderTextBlockStyle}" CharacterSpacing="{ThemeResource PivotHeaderItemCharacterSpacing}"/>
+        </StackPanel>
+
+        <!--TODO: Content should be placed within the following grid-->
+        <Grid Grid.Row="1" x:Name="ContentRoot" Margin="19,9.5,19,0">
+            <ScrollViewer VerticalScrollMode="Enabled" VerticalScrollBarVisibility="Visible" Margin="0,0,0,0">
+                <StackPanel>
+                 <StackPanel Orientation="Horizontal">
+                            <StackPanel x:Name="TimeLine" Orientation="Vertical"/>
+                            <StackPanel x:Name="Locat" Orientation="Vertical"/>
+                        </StackPanel>
+                
+                <Button Content="Close Trip" Click="Close_Trip"/>
+             </StackPanel>
+            </ScrollViewer>
+        </Grid>
+        
+    </Grid>
+    <Page.BottomAppBar>
+        <CommandBar Background="#FFBF6B24" >
+            <CommandBar.PrimaryCommands>
+                <AppBarButton Label="next" Icon="Calculator" Click="Close_Trip"/>
+            </CommandBar.PrimaryCommands>
+        </CommandBar>
+    </Page.BottomAppBar>
+</Page>

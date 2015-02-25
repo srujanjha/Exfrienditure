@@ -1,0 +1,57 @@
+﻿<Page
+    x:Class="Exfrienditure.Friends"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Exfrienditure"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    <Page.Background>
+        <SolidColorBrush Color="#FF301F00"/>
+    </Page.Background>
+    <Grid x:Name="LayoutRoot">
+
+        <Grid.ChildrenTransitions>
+            <TransitionCollection>
+                <EntranceThemeTransition/>
+            </TransitionCollection>
+        </Grid.ChildrenTransitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!-- Title Panel -->
+        <StackPanel Grid.Row="0" Margin="19,0,0,0">
+            <TextBlock x:Name="notes" Text="EXFRIENDITURE" Style="{ThemeResource TitleTextBlockStyle}" Margin="0,12,0,0"/>
+            <TextBlock Text="page title" Margin="0,-6.5,0,26.5"  Style="{ThemeResource HeaderTextBlockStyle}" CharacterSpacing="{ThemeResource PivotHeaderItemCharacterSpacing}"/>
+        </StackPanel>
+
+        <!--TODO: Content should be placed within the following grid-->
+        <Grid Grid.Row="1" x:Name="ContentRoot" Margin="19,9.833,19,10">
+            <StackPanel>
+                <ScrollViewer HorizontalAlignment="Left" Height="429" VerticalAlignment="Top" Width="380" Margin="0,0,-18.333,0">
+                    <StackPanel x:Name="Stacks" Orientation="Vertical" HorizontalAlignment="Left" VerticalAlignment="Top" Width="300">
+                        <TextBlock Text="Name of the Trip" FontSize="25"/>
+                        <TextBox Name="trip" PlaceholderText = "IMAX" Height="40" />
+                        <TextBlock Text="Names of the friends" FontSize="25"/>
+                        <StackPanel Orientation="Horizontal">
+                            <AppBarButton Icon="Add" Label="Add" Click="Add_Click"/>
+                            <AppBarButton x:Name="Remove" Icon="Remove" Label="Remove" Click="Remove_Click"/>
+                        </StackPanel>
+                        <TextBox Name="f1" Text="Me" Height="40" />
+                    </StackPanel>
+                </ScrollViewer>
+            </StackPanel>
+        </Grid>
+    </Grid>
+    <Page.BottomAppBar>
+        <CommandBar Background="#FFBF6B24" >
+            <CommandBar.PrimaryCommands>
+                <AppBarButton Label="next" Icon="Next" Click="Next_Click"/>
+                <AppBarButton Icon="Contact" Label="Add contacts" Click="Contact_Click"/>
+                </CommandBar.PrimaryCommands>
+        </CommandBar>
+    </Page.BottomAppBar>
+</Page>

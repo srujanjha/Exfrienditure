@@ -1,0 +1,26 @@
+﻿<Page
+    x:Class="Exfrienditure.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Exfrienditure"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    <Page.Background>
+        <SolidColorBrush Color="#FF301F00"/>
+    </Page.Background>
+
+    <Grid>
+
+            <ScrollViewer>
+                <StackPanel Orientation="Horizontal" Width="390">
+                    <StackPanel x:Name="Screen">
+                    <Button x:Name="AddButton" Content="+" FontSize="70" Height="150" Width="200" Background="Orange" Click="Add_Click" HorizontalAlignment="Left"/>
+                      </StackPanel>
+                    <StackPanel Name="Screentxt" Width="186">
+                 </StackPanel>
+            </StackPanel>
+            </ScrollViewer>
+    </Grid>
+
+</Page>
